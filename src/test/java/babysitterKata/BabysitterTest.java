@@ -21,7 +21,15 @@ public class BabysitterTest {
 		assertEquals("17", babysitter.getStartTime());
 		assertEquals("4", babysitter.getEndTime());
 		assertEquals("A", babysitter.getFamily());
-		
 	}
+	
+	@Test
+	public void babysitterStartTime19EndTime3AndFamilyBShouldBeReturnable() {
+		Babysitter babysitter = new Babysitter("19","3","B");
+		assertEquals("19", babysitter.getStartTime());
+		assertEquals("3", babysitter.getEndTime());
+		assertEquals("B", babysitter.getFamily());
+	}
+
 
 }

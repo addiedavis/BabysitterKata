@@ -13,15 +13,15 @@ public class Babysitter {
 	}
 
 	public Object getStartTime() {
-		return "17";
+		return startTime;
 	}
 
 	public Object getEndTime() {
-		return "4";
+		return endTime;
 	}
 
 	public Object getFamily() {
-		return "A";
+		return family;
 	}
 
 }
