@@ -1,6 +1,8 @@
 package babysitterKata;
 
 public class Babysitter {
+	
+	public static final String START_TIME_NOT_AVAILABLE_MESSAGE = "I'm sorry, I cannot start before 5 PM.";
 
 	private int startTime;
 	private int endTime;
