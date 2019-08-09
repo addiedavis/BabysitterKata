@@ -2,20 +2,20 @@ package babysitterKata;
 
 public class Babysitter {
 
-	private String startTime;
-	private String endTime;
+	private int startTime;
+	private int endTime;
 	private String family;
 
-	public Babysitter(String startTime) {
+	public Babysitter(int startTime) {
 		this.startTime = startTime;
 	}
 
-	public Babysitter(String startTime, String endTime) {
+	public Babysitter(int startTime, int endTime) {
 		this.startTime = startTime;
 		this.endTime = endTime;
 	}
 
-	public Babysitter(String startTime, String endTime, String family) {
+	public Babysitter(int startTime, int endTime, String family) {
 		this.startTime = startTime;
 		this.endTime = endTime;
 		this.family = family;
