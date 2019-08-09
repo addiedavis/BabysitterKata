@@ -9,7 +9,12 @@ public class Babysitter {
 	public Babysitter(String startTime) {
 		this.startTime = startTime;
 	}
-	
+
+	public Babysitter(String startTime, String endTime) {
+		this.startTime = startTime;
+		this.endTime = endTime;
+	}
+
 	public Babysitter(String startTime, String endTime, String family) {
 		this.startTime = startTime;
 		this.endTime = endTime;

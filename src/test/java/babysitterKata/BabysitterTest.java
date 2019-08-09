@@ -14,6 +14,13 @@ public class BabysitterTest {
 	}
 	
 	@Test
+	public void babysitterObjectExistsWithJustStartTimeAndEndTime() {
+		Babysitter babysitter = new Babysitter("startTime","endTime");	
+		assertNotNull(babysitter.getStartTime()); 
+		assertNotNull(babysitter.getEndTime());
+	}
+	
+	@Test
 	public void babysitterShouldHaveStartTimeEndTimeAndAFamily() {
 		Babysitter babysitter = new Babysitter("startTime","endTime","family");
 		assertNotNull(babysitter.getStartTime()); 
