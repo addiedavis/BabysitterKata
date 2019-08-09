@@ -7,6 +7,9 @@ import org.junit.Test;
 
 public class BabysitterTest {
 	
+	Babysitter babysitter1 = new Babysitter(17,4,"A");
+	Babysitter babysitter2 = new Babysitter(19,3,"B");
+
 	@Test
 	public void babysitterObjectExistsWithJustStartTime() {
 		Babysitter babysitter = new Babysitter(17);	
@@ -22,26 +25,23 @@ public class BabysitterTest {
 	
 	@Test
 	public void babysitterShouldHaveStartTimeEndTimeAndAFamily() {
-		Babysitter babysitter = new Babysitter(17,4,"family");
-		assertNotNull(babysitter.getStartTime()); 
-		assertNotNull(babysitter.getEndTime()); 
-		assertNotNull(babysitter.getFamily()); 
+		assertNotNull(babysitter1.getStartTime()); 
+		assertNotNull(babysitter1.getEndTime()); 
+		assertNotNull(babysitter1.getFamily()); 
 	}
 	
 	@Test
 	public void babysitterStartTime17EndTime4AndFamilyAShouldBeReturnable() {
-		Babysitter babysitter = new Babysitter(17,4,"A");
-		assertEquals(17, babysitter.getStartTime());
-		assertEquals(4, babysitter.getEndTime());
-		assertEquals("A", babysitter.getFamily());
+		assertEquals(17, babysitter1.getStartTime());
+		assertEquals(4, babysitter1.getEndTime());
+		assertEquals("A", babysitter1.getFamily());
 	}
 	
 	@Test
 	public void babysitterStartTime19EndTime3AndFamilyBShouldBeReturnable() {
-		Babysitter babysitter = new Babysitter(19,3,"B");
-		assertEquals(19, babysitter.getStartTime());
-		assertEquals(3, babysitter.getEndTime());
-		assertEquals("B", babysitter.getFamily());
+		assertEquals(19, babysitter2.getStartTime());
+		assertEquals(3, babysitter2.getEndTime());
+		assertEquals("B", babysitter2.getFamily());
 	}
 
 
