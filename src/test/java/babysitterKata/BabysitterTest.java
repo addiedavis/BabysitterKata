@@ -8,6 +8,12 @@ import org.junit.Test;
 public class BabysitterTest {
 	
 	@Test
+	public void babysitterObjectExistsWithJustStartTime() {
+		Babysitter babysitter = new Babysitter("startTime");	
+		assertNotNull(babysitter.getStartTime()); 
+	}
+	
+	@Test
 	public void babysitterShouldHaveStartTimeEndTimeAndAFamily() {
 		Babysitter babysitter = new Babysitter("startTime","endTime","family");
 		assertNotNull(babysitter.getStartTime()); 

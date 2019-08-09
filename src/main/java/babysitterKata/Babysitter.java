@@ -6,6 +6,10 @@ public class Babysitter {
 	private String endTime;
 	private String family;
 
+	public Babysitter(String startTime) {
+		this.startTime = startTime;
+	}
+	
 	public Babysitter(String startTime, String endTime, String family) {
 		this.startTime = startTime;
 		this.endTime = endTime;
